@@ -1,0 +1,679 @@
+
+header {
+    width: 100%;
+    background: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgb(133, 133, 133);
+}
+
+header .top {
+    background: #2a3e48;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    /*font:400 15px/30px "arial";*/
+}
+
+header .navi h1 {
+    text-align: center;
+
+}
+
+header .navi {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+header .navi .menu {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    cursor: pointer;
+}
+
+header .navi .menu img {
+    width: 25px;
+}
+
+header .login {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+header .menu {
+    width: 25px;
+    cursor: pointer;
+}
+
+
+header .dropdown {
+    width: 200px;
+    box-shadow: 0 0 10px rgba(56, 56, 56, 0.192);
+    display: none;
+}
+
+header .dropdown.on {
+    display: block;
+}
+
+header .dropdown .logo {
+
+    margin-right: 45px;
+    margin-top: 70px;
+}
+
+header .dropdown a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+
+}
+
+
+.dropdown ul a:hover {
+    background-color: #eee;
+
+}
+
+header .dropdown nav {
+    width: 300px;
+    height: 550px;
+    background: white;
+    box-shadow: 2px 2px 5px gray;
+    position: absolute;
+    left: 0;
+    top: 83px;
+    z-index: -1;
+    transform: translate(0, -100px);
+    transition: 0.5s;
+    opacity: 0;
+}
+
+header .dropdown nav.on {
+    transform: translate(0, 0);
+    opacity: 1;
+    z-index: 1;
+}
+
+header .dropdown nav.off {
+    display: none;
+}
+
+header .dropdown .banner {
+    position: relative;
+    right: 60px;
+    top: 35px;
+}
+
+.visual {
+    padding-top: 124px;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.visual .swiper-pagination {
+
+    width: auto;
+    left: auto;
+    top: auto;
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+    z-index: 1;
+}
+.visual .swiper-pagination span{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    margin:0 10px!important;
+}
+
+
+.banner {
+    padding: 0 50px;
+}
+
+.banner > article {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 200px;
+}
+
+.banner > article h2 {
+    text-transform: uppercase;
+}
+
+.banner > article .left {
+    margin-left: 120px;
+    width: 50%;
+    position: relative;
+    opacity: 0;
+    top: 50px;
+    transition: 1s;
+}
+
+.banner > article .right {
+    width: 50%;
+    position: relative;
+    margin-right: 120px;
+    opacity: 0;
+    top: 50px;
+    transition: 1s 0.5s;
+}
+
+.banner > article.on .left,
+.banner > article.on .right {
+    opacity: 1;
+    top: 0;
+}
+
+
+.banner .best .left {
+    opacity: 0;
+    top: 50px;
+    transition: 1s 0.5s;
+}
+
+.banner .best .right {
+    opacity: 0;
+    top: 50px;
+    transition: 1s;
+}
+
+.banner > article.on .left,
+.banner > article.on .right {
+    opacity: 1;
+    top: 0;
+}
+
+
+.banner > article img {
+    width: 100%;
+}
+
+/*skin*/
+.banner .skin .right {
+    padding-left: 50px
+}
+
+.banner .skin h2 {
+    font-size: 50px;
+    padding-top: 180px;
+    padding-left: 70px;
+}
+
+.banner .skin h2 span {
+    padding-left: 200px;
+}
+
+.banner .skin .more {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    font-size: 30px;
+
+}
+
+/*best*/
+.banner .best {
+    position: relative;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+.banner .best h2 {
+
+    font-size: 50px;
+    padding-top: 180px;
+    padding-left: 26px;
+    line-height: 100px;
+}
+
+
+.banner .best .p1 {
+    font-size: 30px;
+}
+
+.banner .best .arrow {
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+}
+
+.banner .best .p2 {
+    font-size: 20px;
+    color: rgb(121, 121, 121)
+}
+
+.banner .best h2 span {
+    padding-left: 200px;
+}
+
+
+/*new*/
+
+.banner .new {
+    position: relative;
+    text-align: center;
+
+
+}
+
+.banner .new h2 {
+
+    font-size: 50px;
+    padding-top: 180px;
+    padding-right: 10px;
+    line-height: 100px;
+
+}
+
+.banner .new .p1 {
+    font-size: 30px;
+
+
+}
+
+
+.banner .new .arrow {
+    position: absolute;
+    right: 50px;
+    bottom: 40px;
+}
+
+
+.banner .new .p2 {
+    font-size: 20px;
+    color: rgb(121, 121, 121)
+}
+
+
+.banner .new .p2 span {
+    padding-left: 0px;
+}
+
+
+/**/
+
+.dive {
+    padding-bottom: 100px;
+
+    margin-bottom: 300px;
+    position: relative;
+}
+
+.dive h2 {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 60px;
+    margin-top: 200px;
+}
+
+.p1 {
+    text-indent: 50px;
+    line-height: 50px;
+}
+
+.p2 {
+    margin-top: 30px;
+    text-indent: 10px;
+}
+
+.p3 {
+    text-indent: 50px;
+}
+
+.line {
+    border-left: thin solid #cecece;
+    height: 300px;
+    margin-top: 250px;
+}
+
+
+.dive .content_fix {
+    width: 1678px;
+    height: 850px;
+    background: url("../img/dive_in.jpg") no-repeat center top fixed;
+    margin: 0 auto;
+}
+
+.dive .progress {
+    width: 1400px;
+    height: 760px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    box-shadow: 5px 10px 20px gray;
+}
+
+.dive .progress {
+    display: flex;
+}
+
+.dive .progress .left {
+    margin-right: 150px;
+    margin-left: 130px;
+    margin-top: 250px;
+
+    font-size: 30px;
+}
+
+.progress .left .p1 {
+    text-indent: 2px;
+
+
+}
+
+.progress .left .p1 span {
+    padding-left: 58px;
+
+}
+
+.dive .progress .right {
+    position: relative;
+    margin-left: 0;
+    margin-top: 30px;
+}
+
+
+.promotion .gradient {
+    width: 100%;
+    height: 854px;
+    /*background: radial-gradient(0% 56%, circle, cover, #accbee 14%, #E7F0FD 81%);*/
+    background: linear-gradient(45deg, #accbee 14%, #E7F0FD 81%);
+    position: relative;
+}
+
+.promotion .contents {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.promotion h2 {
+    font-size: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.promotion .contents > div {
+    position: absolute;
+    transition: 0.25s;
+}
+
+.promotion .promotion1 {
+    left: 0;
+    bottom: -80px;
+}
+
+.promotion .promotion2 {
+    left: 450px;
+    bottom: 60px;
+}
+
+.promotion .promotion3 {
+    right: 550px;
+    bottom: 50px;
+}
+
+.promotion .promotion4 {
+    right: 0;
+    bottom: 60px;
+}
+
+.promotion .contents .promotion1:hover {
+    transform: scale(1.1, 1.1)
+}
+
+.promotion .contents .promotion2:hover {
+    transform: scale(1.1, 1.1)
+}
+
+.promotion .contents .promotion3:hover {
+    transform: scale(1.1, 1.1)
+}
+
+.promotion .contents .promotion4:hover {
+    transform: scale(1.1, 1.1)
+}
+
+
+.torriden_story {
+
+    text-align: center;
+    margin-top: 300px;
+}
+
+.torriden_story h2 {
+
+    font-size: 60px;
+    margin-bottom: 10px;
+
+}
+
+.torriden_story p {
+    font-size: 30px;
+    margin-bottom: 50px;
+
+
+}
+
+.story {
+    margin: 50px 0 200px;
+
+}
+
+.story .contents {
+    width: 1653px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.story .contents > li > div {
+    width: 502px;
+    height: 615px;
+    overflow: hidden;
+}
+
+.story .contents > li > div img {
+    filter: brightness(1);
+    transition: 1s
+}
+
+.story .contents > li:hover > div img {
+    filter: brightness(0.5);
+    transform: scale(1.3);
+    transition: 3s
+}
+
+.story .contents li P {
+    text-align: center;
+    line-height: 56px;
+    font-size: 20pt;
+}
+
+
+.review {
+    margin-bottom: 200px;
+    margin-top: 300px;
+}
+
+.review h2 {
+    font-size: 60px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.review .review_slide {
+    width: 1600px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.review .review_slide .swiper-slide .inner {
+    display: flex;
+}
+
+.review .review_slide .swiper-slide .inner .left {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.review .review_slide .swiper-slide .inner .right {
+    width: 50%;
+    margin-left: 50px;
+    padding-top: 100px;
+    padding-right: 200px;
+}
+
+.review .review_slide .swiper-slide .inner .right h3 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    line-height: 1.7;
+}
+
+.review .review_slide .swiper-slide .inner .right p:nth-of-type(1) {
+    font-size: 30px;
+    color: gray;
+    line-height: 1.7;
+    margin-left: 160px;
+    margin-bottom: 30px;
+}
+
+.review .review_slide .swiper-slide .inner .right .date {
+    text-align: right;
+    margin-bottom: 100px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.review .review_slide .swiper-slide .inner .right .star {
+    text-align: right;
+}
+
+.review .review_slide .left_arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-0, -50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.review .review_slide .right_arrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-0, -50%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+footer {
+    background: #99b4be;
+    color: #fff;
+    padding: 100px 0;
+}
+
+footer .inner {
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+}
+
+footer .inner .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .inner .left .sns {
+    display: flex;
+}
+
+footer .inner .left .sns li {
+    margin-right: 15px;
+}
+
+footer .inner .left .sns li:last-child {
+    margin-right: 0;
+}
+
+footer .inner .left .sns img {
+    width: 20px;
+}
+
+footer .inner .right {
+    width: 50%;
+    display: flex;
+}
+
+footer .inner .right .ft_text {
+    width: 50%;
+}
+
+footer .inner .right .ft_text li {
+    margin-bottom: 20px;
+}
+
+footer .inner .right .ft_text li:nth-of-type(4) {
+    margin-bottom: 50px;
+}
+
+footer .inner .right .ft_text li:last-child {
+    margin-bottom: 0;
+}
+
+footer .inner .right .ft_text li span {
+    display: inline-block;
+    width: 64px;
+    margin-right: 20px;
+}
+
+
+footer .inner .right .ft_text2 {
+    width: 50%;
+}
+
+footer .inner .right .ft_text2 li {
+    margin-bottom: 20px;
+}
+
+footer .inner .right .ft_text2 li:last-child {
+    margin-bottom: 0;
+}
+
+footer .inner .right .ft_text2 li span {
+    display: inline-block;
+    width: 118px;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

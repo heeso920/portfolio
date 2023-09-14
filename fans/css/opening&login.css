@@ -1,0 +1,104 @@
+
+body {
+    /* background: rgb(0, 155, 230); */
+}
+
+.index-page {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#intro {
+    scrollbar-width: none;
+    /*overflow-y: scroll; */
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 155, 230);
+    overflow: hidden;
+}
+
+#intro .wave {
+    position: absolute;
+    right: -12000px;
+    top: -12501px;
+    transition: 10s;
+    overflow: hidden;
+}
+
+#intro .test {
+    width: 300vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: -100vh;
+    /*transition:10s;*/
+}
+
+
+#intro .title {
+    font-family: 'Sansita Swashed', cursive;
+    text-align: center;
+    font-size: 200px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+
+.login {
+    width: 400px;
+    height: 600px;
+    border: 5px solid #fff;
+    border-radius: 50px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.login h1 {
+    font-size: 80px;
+    font-family: 'Sansita Swashed', cursive;
+    color: rgb(0, 155, 230);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login p {
+    font-size: 25px;
+    font-family: 'arial', sans-serif;
+    color: rgb(0, 155, 230);
+    margin: 50px 30px 0;
+}
+
+.login p input {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid rgb(0, 155, 230);
+    border-radius: 15px;
+    padding: 10px 10px;
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    outline: none;
+    color: rgb(0, 155, 230);
+}
+
+.login .login_box {
+    border: 1px solid rgb(0, 155, 230);
+    border-radius: 20px;
+    background: rgb(0, 155, 230);
+    margin: 50px 50px 0;
+    padding: 25px 0;
+}
+
+.login .login_box a {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}

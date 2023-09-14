@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+*{margin:0;padding:0;box-sizing:border-box;}
+*:before, *:after {box-sizing: border-box;}
+ol,ul{list-style:none}
+a{text-decoration:none;color:inherit}
+.cfix::after{content:""; display: block; clear: both;}
+html{scroll-behavior: smooth;}
+body{overflow-x:hidden;}
+.posNum {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 50px;
+    background: #111;
+    color: #fff;
+    font:700 20px/50px "arial";
+    text-align: center;
+    z-index: 999999;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-track{
+    background: transparent;
+}
+body::-webkit-scrollbar-thumb{
+    background: #403b31;
+    /* background: #a67f5d; */
+    border-radius: 25px;
+}
+
+
+
+

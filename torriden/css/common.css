@@ -1,0 +1,23 @@
+@charset "UTF-8";
+* {margin: 0;padding: 0;box-sizing: border-box}
+ol, ul {list-style: none}
+a {text-decoration: none;color: inherit}
+body{overflow-x:hidden;}
+/*font link*/
+
+
+.posNum {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 50px;
+    background: #111;
+    color: #fff;
+    font:700 20px/50px "arial";
+    text-align: center;
+    z-index: 999999;
+}
+
+
+
